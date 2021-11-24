@@ -1,0 +1,47 @@
+:root {
+  --lilac: #C5ADEF;
+  --grey: #B2B3BB;
+  --light: #ECF1F8;
+  --dark: #3E4056;
+  --mandy1: #ED5267;
+  --mandy2: #FC719F;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+*::before,
+*::after {
+  content: '';
+}
+
+ol, ul {
+	list-style: none;
+}
+
+button,
+a {
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.card-font {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0px;
+  text-align: left;
+}
