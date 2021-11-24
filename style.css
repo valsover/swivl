@@ -16,11 +16,6 @@
   border: 0;
 }
 
-*::before,
-*::after {
-  content: '';
-}
-
 ol, ul {
 	list-style: none;
 }
@@ -44,4 +39,142 @@ body {
   line-height: 44px;
   letter-spacing: 0px;
   text-align: left;
+}
+
+.container {
+  max-width: 1440px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 135px;
+}
+
+
+/* HEADER */
+
+.header {
+  width: 100%;
+  height: 112px;
+  box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.06);
+}
+
+.plus-button {
+  position: absolute;
+  bottom: -32px;
+  right: 118px;
+
+  width: 64px;
+  height: 64px;
+  font-size: 45px;
+  color: #fff;
+  background: linear-gradient(135deg, #FF974F 0%, #E32C75 100%);
+  border-radius: 50%;
+}
+
+.header__container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 113px 0 135px;
+}
+
+.left {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px 0;
+}
+
+.logo {
+  width: 50px;
+  height: 23px;
+  background: url(assets/svg/logo.svg) no-repeat;
+  background-position: 0 3px;
+}
+
+.left__nav .nav__list {
+  display: flex;
+  height: 40px;
+  gap: 0 39px;
+}
+
+.left__nav .nav__list-item {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: var(--dark);
+  cursor: pointer;
+}
+
+.left__nav .nav__list-item_active {
+  font-weight: 600;
+  color: var(--dark);
+  border-bottom: 4px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(135deg, #FF974F 0%, #E32C75 100%);
+}
+
+.right {
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 0 17px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user__name {
+  margin-right: 20px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  text-align: left;
+}
+
+.user__img {
+  margin-right: 12px;
+  width: 32px;
+  height: 32px;
+  background: url(assets/img/user-img.png) no-repeat;
+  background-position: center;
+}
+
+.user__button {
+  width: 16px;
+  height: 16px;
+  background: url(assets/svg/user-btn.svg) no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.right__nav .nav__list {
+  display: flex;
+}
+
+.right__nav .nav__list-item {
+  width: 32px;
+  height: 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.right__nav .nav__list-item:nth-child(1) {
+  background-image: url(assets/svg/nav-notifications.svg);
+}
+
+.right__nav .nav__list-item:nth-child(2) {
+  background-image: url(assets/svg/nav-share.svg);
+}
+
+.right__nav .nav__list-item:nth-child(3) {
+  background-image: url(assets/svg/nav-medium.svg);
 }
