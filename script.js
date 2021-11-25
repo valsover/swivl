@@ -5,7 +5,6 @@ const dotsBtn = document.getElementById('dotsBtn'),
   menuBtns = document.querySelectorAll('.left__menu p');
 
 const showDropDown = (e) => {
-  console.log(dropDownMenu.classList.length);
   if (dropDownMenu.classList.length === 3) {
     dropDownMenu.classList.remove('left__menu_hidden');
   } else {
